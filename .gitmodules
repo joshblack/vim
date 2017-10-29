@@ -7,3 +7,6 @@
 [submodule "pack/bundle/start/pinnacle"]
 	path = pack/bundle/start/pinnacle
 	url = https://github.com/wincent/pinnacle.git
+[submodule "pack/bundle/start/vim-git"]
+	path = pack/bundle/start/vim-git
+	url = https://github.com/tpope/vim-git.git
