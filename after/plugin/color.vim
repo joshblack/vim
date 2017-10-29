@@ -31,15 +31,21 @@ function s:CheckColorScheme()
   let l:highlight=pinnacle#highlight({'bg': l:color, 'fg': l:color})
   execute 'highlight EndOfBuffer ' . l:highlight
 
+  let l:highlight_special=pinnacle#highlight({'bg': l:color, 'fg': pinnacle#extract_fg('Comment')})
+  execute 'highlight Whitespace ' . l:highlight_special
+  execute 'highlight SpecialKey ' . l:highlight_special
+
   " Allow for overrides:
   " - `statusline.vim` will re-set User1, User2 etc.
   " - `after/plugin/loupe.vim` will override Search.
-  " doautocmd ColorScheme
+  doautocmd ColorScheme
+  execute 'highlight NonText term=none ctermfg=8 gui=none guifg=#65737e'
+  execute 'highlight SpecialKey term=none ctermfg=8 gui=none guifg=#65737e'
 endfunction
 
 if v:progname !=# 'vi'
   if has('autocmd')
-    augroup CustomAutocolor
+    augroup JBAutocolor
       autocmd!
       autocmd FocusGained * call s:CheckColorScheme()
     augroup END
