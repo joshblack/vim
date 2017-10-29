@@ -19,3 +19,75 @@
 [submodule "pack/nerdtree/opt/nerdtree"]
 	path = pack/nerdtree/opt/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "pack/bundle/start/indentLine"]
+	path = pack/bundle/start/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "pack/bundle/start/command-t"]
+	path = pack/bundle/start/command-t
+	url = https://github.com/wincent/command-t.git
+[submodule "pack/bundle/start/tcomment_vim"]
+	path = pack/bundle/start/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "pack/bundle/start/terminus"]
+	path = pack/bundle/start/terminus
+	url = https://github.com/wincent/terminus.git
+[submodule "pack/bundle/start/ultisnips"]
+	path = pack/bundle/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "pack/bundle/start/vim-docvim"]
+	path = pack/bundle/start/vim-docvim
+	url = https://github.com/wincent/vim-docvim.git
+[submodule "pack/bundle/start/vim-json"]
+	path = pack/bundle/start/vim-json
+	url = https://github.com/elzr/vim-json.git
+[submodule "pack/bundle/start/vim-lion"]
+	path = pack/bundle/start/vim-lion
+	url = https://github.com/tommcdo/vim-lion.git
+[submodule "pack/bundle/start/vim-markdown"]
+	path = pack/bundle/start/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "pack/bundle/start/vim-reason"]
+	path = pack/bundle/start/vim-reason
+	url = https://github.com/reasonml-editor/vim-reason.git
+[submodule "pack/bundle/start/vim-signature"]
+	path = pack/bundle/start/vim-signature
+	url = https://github.com/kshenoy/vim-signature.git
+[submodule "pack/bundle/start/vim-surround"]
+	path = pack/bundle/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/bundle/start/vim-textobj-comment"]
+	path = pack/bundle/start/vim-textobj-comment
+	url = https://github.com/glts/vim-textobj-comment.git
+[submodule "pack/bundle/start/vim-textobj-user"]
+	path = pack/bundle/start/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user.git
+[submodule "pack/bundle/start/vim-fugitive"]
+	path = pack/bundle/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/bundle/start/vim-easydir"]
+	path = pack/bundle/start/vim-easydir
+	url = https://github.com/duggiefresh/vim-easydir.git
+[submodule "pack/bundle/start/vim-clipper"]
+	path = pack/bundle/start/vim-clipper
+	url = https://github.com/wincent/vim-clipper.git
+[submodule "pack/bundle/start/replay"]
+	path = pack/bundle/start/replay
+	url = https://github.com/wincent/replay.git
+[submodule "pack/bundle/start/scalpel"]
+	path = pack/bundle/start/scalpel
+	url = https://github.com/wincent/scalpel.git
+[submodule "pack/bundle/start/loupe"]
+	path = pack/bundle/start/loupe
+	url = https://github.com/wincent/loupe.git
+[submodule "pack/YouCompleteMe/opt/YouCompleteMe"]
+	path = pack/YouCompleteMe/opt/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "pack/depolete/opt/deoplete"]
+	path = pack/depolete/opt/deoplete
+	url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "pack/undotree/opt/undotree"]
+	path = pack/undotree/opt/undotree
+	url = https://github.com/mbbill/undotree.git
+[submodule "pack/vim-abolish/opt/vim-abolish"]
+	path = pack/vim-abolish/opt/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
