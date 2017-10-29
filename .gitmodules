@@ -10,3 +10,12 @@
 [submodule "pack/bundle/start/vim-git"]
 	path = pack/bundle/start/vim-git
 	url = https://github.com/tpope/vim-git.git
+[submodule "pack/bundle/start/vim-javascript"]
+	path = pack/bundle/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "pack/bundle/start/vim-jsx"]
+	path = pack/bundle/start/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
+[submodule "pack/nerdtree/opt/nerdtree"]
+	path = pack/nerdtree/opt/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

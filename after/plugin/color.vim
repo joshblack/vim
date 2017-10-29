@@ -24,18 +24,16 @@ function s:CheckColorScheme()
     color base16-tomorrow-night
   endif
 
-  " TODO
-  " execute 'highlight Comment ' . pinnacle#italicize('Comment')
+  execute 'highlight Comment ' . pinnacle#italicize('Comment')
 
   " Make tildes at EndOfBuffer less obvious.
-  " let l:color=pinnacle#extract_bg('ColorColumn')
-  " let l:highlight=pinnacle#highlight({'bg': l:color, 'fg': l:color})
-  " execute 'highlight EndOfBuffer ' . l:highlight
+  let l:color=pinnacle#extract_bg('ColorColumn')
+  let l:highlight=pinnacle#highlight({'bg': l:color, 'fg': l:color})
+  execute 'highlight EndOfBuffer ' . l:highlight
 
   " Allow for overrides:
   " - `statusline.vim` will re-set User1, User2 etc.
   " - `after/plugin/loupe.vim` will override Search.
-  " TODO
   " doautocmd ColorScheme
 endfunction
 
