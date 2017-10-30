@@ -91,3 +91,18 @@
 [submodule "pack/vim-abolish/opt/vim-abolish"]
 	path = pack/vim-abolish/opt/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "pack/bundle/start/nerdcommenter"]
+	path = pack/bundle/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "pack/bundle/start/ctrlp.vim"]
+	path = pack/bundle/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "pack/bundle/start/editorconfig-vim"]
+	path = pack/bundle/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "pack/bundle/start/emmet-vim"]
+	path = pack/bundle/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim
+[submodule "pack/bundle/start/groovy.vim"]
+	path = pack/bundle/start/groovy.vim
+	url = https://github.com/vim-scripts/groovy.vim

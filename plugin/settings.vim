@@ -44,7 +44,7 @@ if has('folding')
   endif
   set foldmethod=indent               " not as cool as syntax, but faster
   set foldlevelstart=99               " start unfolded
-  set foldtext=wincent#settings#foldtext()
+  set foldtext=joshblack#settings#foldtext()
 endif
 
 if v:version > 703 || v:version == 703 && has('patch541')
@@ -52,15 +52,13 @@ if v:version > 703 || v:version == 703 && has('patch541')
 endif
 
 set formatoptions+=n                  " smart auto-indenting inside numbered lists
-set guifont=Source\ Code\ Pro\ Light:h13
-set guioptions-=T                     " don't show toolbar
 set hidden                            " allows you to hide buffers with unsaved changes without being prompted
 
 if !has('nvim')
   " Sync with corresponding nvim settings in ~/.vim/plugin/autocmds.vim:
   set highlight+=@:ColorColumn        " ~/@ at end of window, 'showbreak'
   set highlight+=N:DiffText           " make current line number stand out a little
-  set highlight+=c:LineNr             " blend vertical separators with line numbers
+  " set highlight+=c:LineNr             " blend vertical separators with line numbers
 endif
 
 if exists('&inccommand')
@@ -75,13 +73,8 @@ if has('linebreak')
 endif
 
 set list                              " show whitespace
-set listchars=nbsp:⦸                  " CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
-set listchars+=tab:▷┅                 " WHITE RIGHT-POINTING TRIANGLE (U+25B7, UTF-8: E2 96 B7)
-                                      " + BOX DRAWINGS HEAVY TRIPLE DASH HORIZONTAL (U+2505, UTF-8: E2 94 85)
-set listchars+=extends:»              " RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
-set listchars+=precedes:«             " LEFT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00AB, UTF-8: C2 AB)
-set listchars+=trail:·                " BULLET
-set listchars+=eol:¬
+set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:·
+" set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:·,eol:¬
 set nojoinspaces                      " don't autoinsert two spaces after '.', '?', '!' for join command
 set number                            " show line numbers in gutter
 

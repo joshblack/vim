@@ -11,12 +11,6 @@ if has('autocmd')
     " Disable paste mode on leaving insert mode.
     autocmd InsertLeave * set nopaste
 
-    if has('nvim')
-      autocmd ColorScheme * highlight! link NonText ColorColumn
-      autocmd ColorScheme * highlight! link CursorLineNr DiffText
-      autocmd ColorScheme * highlight! link VertSplit LineNr
-    endif
-
     " Make current window more obvious by turning off/adjusting some features in non-current
     " windows.
     if exists('+winhighlight')
@@ -40,16 +34,16 @@ if has('autocmd')
     if has('mksession')
       " Save/restore folds and cursor position.
       autocmd BufWritePost,BufLeave,WinLeave ?* if joshblack#autocmds#should_mkview() | call joshblack#autocmds#mkview() | endif
-      " if has('folding')
-        " autocmd BufWinEnter ?* if joshblack#autocmds#should_mkview() | silent! loadview | execute 'silent! ' . line('.') . 'foldopen!' | endif
-      " else
-        " autocmd BufWinEnter ?* if joshblack#autocmds#should_mkview() | silent! loadview | endif
-      " endif
+      if has('folding')
+        autocmd BufWinEnter ?* if joshblack#autocmds#should_mkview() | silent! loadview | execute 'silent! ' . line('.') . 'foldopen!' | endif
+      else
+        autocmd BufWinEnter ?* if joshblack#autocmds#should_mkview() | silent! loadview | endif
+      endif
     elseif has('folding')
       " Like the autocmd described in `:h last-position-jump` but we add `:foldopen!`.
-      " autocmd BufWinEnter * if line("'\"") > 1 && line("'\"") <= line('$') | execute "normal! g`\"" | execute 'silent! ' . line("'\"") . 'foldopen!' | endif
+      autocmd BufWinEnter * if line("'\"") > 1 && line("'\"") <= line('$') | execute "normal! g`\"" | execute 'silent! ' . line("'\"") . 'foldopen!' | endif
     else
-      " autocmd BufWinEnter * if line("'\"") > 1 && line("'\"") <= line('$') | execute "normal! g`\"" | endif
+      autocmd BufWinEnter * if line("'\"") > 1 && line("'\"") <= line('$') | execute "normal! g`\"" | endif
     endif
 
     autocmd BufWritePost */spell/*.add silent! :mkspell! %
