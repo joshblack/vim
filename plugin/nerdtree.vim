@@ -3,7 +3,7 @@ let g:loaded_netrw=1
 let g:loaded_netrwPlugin=1
 
 " Tell vim to display hidden files by default
-let NERDTreeShowHidden=1
+let g:NERDTreeShowHidden=1
 let g:NERDSpaceDelims=1
 
 " The default of 31 is just a little too narrow.
@@ -31,6 +31,8 @@ if has('autocmd')
     autocmd!
     autocmd User NERDTreeInit call joshblack#autocmds#attempt_select_last_file()
     autocmd vimenter * NERDTree
+    " autocmd bufenter * NERDTreeMirror
+    autocmd vimenter * wincmd w
   augroup END
 endif
 
