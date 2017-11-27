@@ -82,8 +82,8 @@
 [submodule "pack/YouCompleteMe/opt/YouCompleteMe"]
 	path = pack/YouCompleteMe/opt/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
-[submodule "pack/depolete/opt/deoplete"]
-	path = pack/depolete/opt/deoplete
+[submodule "pack/deoplete/opt/deoplete"]
+	path = pack/deoplete/opt/deoplete
 	url = https://github.com/Shougo/deoplete.nvim.git
 [submodule "pack/undotree/opt/undotree"]
 	path = pack/undotree/opt/undotree
