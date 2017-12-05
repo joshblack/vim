@@ -21,6 +21,9 @@ let g:CommandTWildIgnore.=',*/bower_components'
 let g:CommandTWildIgnore.=',*/tmp'
 let g:CommandTWildIgnore.=',*/vendor'
 let g:CommandTWildIgnore.=',*/node_modules'
+let g:CommandTWildIgnore.=',*/es'
+let g:CommandTWildIgnore.=',*/lib'
+let g:CommandTWildIgnore.=',*/dist'
 
 " Allow Command-T to open selections in netrw windows.
 let g:CommandTWindowFilter='!&buflisted && &buftype == "nofile" && !exists("w:netrw_liststyle")'
